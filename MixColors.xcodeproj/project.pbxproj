@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		79658B132C00CCBD000BD566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B122C00CCBD000BD566 /* AppDelegate.swift */; };
 		79658B152C00CCBD000BD566 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B142C00CCBD000BD566 /* SceneDelegate.swift */; };
-		79658B172C00CCBD000BD566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B162C00CCBD000BD566 /* ViewController.swift */; };
+		79658B172C00CCBD000BD566 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B162C00CCBD000BD566 /* MainViewController.swift */; };
 		79658B1A2C00CCBD000BD566 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 79658B192C00CCBD000BD566 /* Base */; };
 		79658B1C2C00CCBE000BD566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79658B1B2C00CCBE000BD566 /* Assets.xcassets */; };
 		79658B1F2C00CCBE000BD566 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 79658B1E2C00CCBE000BD566 /* Base */; };
+		79658B272C00D718000BD566 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B262C00D718000BD566 /* UIView + Ext.swift */; };
+		79658B292C00E092000BD566 /* MixColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B282C00E092000BD566 /* MixColor.swift */; };
+		79658B2B2C00EEC4000BD566 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79658B2A2C00EEC4000BD566 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79658B0F2C00CCBD000BD566 /* MixColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79658B122C00CCBD000BD566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79658B142C00CCBD000BD566 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79658B162C00CCBD000BD566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79658B162C00CCBD000BD566 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79658B192C00CCBD000BD566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79658B1B2C00CCBE000BD566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79658B1E2C00CCBE000BD566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79658B202C00CCBE000BD566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79658B262C00D718000BD566 /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		79658B282C00E092000BD566 /* MixColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixColor.swift; sourceTree = "<group>"; };
+		79658B2A2C00EEC4000BD566 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		79658B112C00CCBD000BD566 /* MixColors */ = {
 			isa = PBXGroup;
 			children = (
-				79658B122C00CCBD000BD566 /* AppDelegate.swift */,
-				79658B142C00CCBD000BD566 /* SceneDelegate.swift */,
-				79658B162C00CCBD000BD566 /* ViewController.swift */,
-				79658B182C00CCBD000BD566 /* Main.storyboard */,
+				79658B302C0102A8000BD566 /* Storyboards */,
+				79658B2D2C01028A000BD566 /* ViewControllers */,
+				79658B2F2C01029B000BD566 /* Extensions */,
+				79658B2C2C01023C000BD566 /* Models */,
+				79658B2E2C010294000BD566 /* Services */,
+				79658B312C0102C4000BD566 /* App */,
 				79658B1B2C00CCBE000BD566 /* Assets.xcassets */,
-				79658B1D2C00CCBE000BD566 /* LaunchScreen.storyboard */,
-				79658B202C00CCBE000BD566 /* Info.plist */,
 			);
 			path = MixColors;
+			sourceTree = "<group>";
+		};
+		79658B2C2C01023C000BD566 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79658B282C00E092000BD566 /* MixColor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79658B2D2C01028A000BD566 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79658B162C00CCBD000BD566 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		79658B2E2C010294000BD566 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79658B2A2C00EEC4000BD566 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79658B2F2C01029B000BD566 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79658B262C00D718000BD566 /* UIView + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79658B302C0102A8000BD566 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				79658B182C00CCBD000BD566 /* Main.storyboard */,
+				79658B1D2C00CCBE000BD566 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		79658B312C0102C4000BD566 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79658B122C00CCBD000BD566 /* AppDelegate.swift */,
+				79658B142C00CCBD000BD566 /* SceneDelegate.swift */,
+				79658B202C00CCBE000BD566 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79658B172C00CCBD000BD566 /* ViewController.swift in Sources */,
+				79658B172C00CCBD000BD566 /* MainViewController.swift in Sources */,
+				79658B2B2C00EEC4000BD566 /* DataStore.swift in Sources */,
 				79658B132C00CCBD000BD566 /* AppDelegate.swift in Sources */,
+				79658B272C00D718000BD566 /* UIView + Ext.swift in Sources */,
+				79658B292C00E092000BD566 /* MixColor.swift in Sources */,
 				79658B152C00CCBD000BD566 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +231,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +295,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -294,22 +356,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GNN7DQ637Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MixColors/Info.plist;
+				INFOPLIST_FILE = MixColors/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Semikin.MixColors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,22 +389,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GNN7DQ637Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MixColors/Info.plist;
+				INFOPLIST_FILE = MixColors/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ivan-Semikin.MixColors";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

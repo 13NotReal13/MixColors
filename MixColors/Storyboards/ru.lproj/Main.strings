@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Белый"; ObjectID = "Plq-gK-pgx"; */
+"Plq-gK-pgx.text" = "Белый";
+
+/* Class = "UIButton"; configuration.title = "Перемешать"; ObjectID = "Y49-VG-fru"; */
+"Y49-VG-fru.configuration.title" = "Перемешать";
+
+/* Class = "UIButton"; normalTitle = "Перемешать"; ObjectID = "Y49-VG-fru"; */
+"Y49-VG-fru.normalTitle" = "Перемешать";
+
+/* Class = "UIButton"; normalTitle = "Выбрать"; ObjectID = "ZLk-5P-wob"; */
+"ZLk-5P-wob.normalTitle" = "Выбрать";
+
+/* Class = "UIButton"; normalTitle = "Выбрать"; ObjectID = "ak5-uT-t6Y"; */
+"ak5-uT-t6Y.normalTitle" = "Выбрать";
+
+/* Class = "UIButton"; normalTitle = "EN"; ObjectID = "dqy-Wd-bCx"; */
+"dqy-Wd-bCx.normalTitle" = "EN";

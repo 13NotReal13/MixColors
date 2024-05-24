@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MixColors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Белый" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plq-gK-pgx">
+                                <rect key="frame" x="170.33333333333334" y="75" width="52.666666666666657" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfm-85-ObG">
+                                <rect key="frame" x="16" y="111.33333333333331" width="361" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zW5-GB-5LU"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ix4-Tr-tzs">
+                                <rect key="frame" x="16" y="289.33333333333331" width="361" height="126"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-kZ-Yh0">
+                                        <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="126"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a9-Wz-5rt">
+                                                <rect key="frame" x="50.333333333333329" y="0.0" width="79.999999999999986" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Buh-b8-LQz"/>
+                                                    <constraint firstAttribute="height" constant="80" id="db5-Tc-Amn"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLk-5P-wob">
+                                                <rect key="frame" x="59.333333333333329" y="96" width="62" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Выбрать"/>
+                                                <connections>
+                                                    <action selector="chooseColorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxS-iX-jlx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nc5-Bz-ojw">
+                                        <rect key="frame" x="180.66666666666663" y="0.0" width="180.33333333333337" height="126"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBT-hm-G6l">
+                                                <rect key="frame" x="50" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="9NZ-0C-mvp"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Sdn-le-Aew"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak5-uT-t6Y">
+                                                <rect key="frame" x="59" y="96" width="62" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Выбрать"/>
+                                                <connections>
+                                                    <action selector="chooseColorButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsT-0I-eP2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y49-VG-fru">
+                                <rect key="frame" x="133.33333333333334" y="447.33333333333331" width="126.33333333333334" height="34.333333333333314"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Перемешать"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Перемешать" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="mixButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KiX-fJ-4Zz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="ix4-Tr-tzs" firstAttribute="top" secondItem="Tfm-85-ObG" secondAttribute="bottom" constant="50" id="8uI-Am-2j0"/>
+                            <constraint firstItem="Plq-gK-pgx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="D1e-UL-E39"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ix4-Tr-tzs" secondAttribute="trailing" constant="16" id="FD3-9i-INb"/>
+                            <constraint firstItem="Tfm-85-ObG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IHk-A5-yHf"/>
+                            <constraint firstItem="Y49-VG-fru" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OCf-rv-bZ8"/>
+                            <constraint firstItem="ix4-Tr-tzs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zvm-Wk-yHe"/>
+                            <constraint firstItem="Y49-VG-fru" firstAttribute="top" secondItem="ix4-Tr-tzs" secondAttribute="bottom" constant="32" id="jPZ-Vo-k0l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tfm-85-ObG" secondAttribute="trailing" constant="16" id="lGG-WP-2MM"/>
+                            <constraint firstItem="Plq-gK-pgx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tFo-E4-des"/>
+                            <constraint firstItem="Tfm-85-ObG" firstAttribute="top" secondItem="Plq-gK-pgx" secondAttribute="bottom" constant="16" id="xe2-K1-zPF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseFirstColorButton" destination="ZLk-5P-wob" id="hUP-bm-ntm"/>
+                        <outlet property="chooseSecondColorButton" destination="ak5-uT-t6Y" id="xs0-S7-hLF"/>
+                        <outlet property="firstColorView" destination="2a9-Wz-5rt" id="Nnv-ur-FQO"/>
+                        <outlet property="mixButton" destination="Y49-VG-fru" id="LSh-yz-JII"/>
+                        <outlet property="mixedColorView" destination="Tfm-85-ObG" id="JfB-Kb-rck"/>
+                        <outlet property="nameMixedColorLabel" destination="Plq-gK-pgx" id="yIc-WQ-Faz"/>
+                        <outlet property="secondColorView" destination="sBT-hm-G6l" id="x2B-O8-Xyd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
